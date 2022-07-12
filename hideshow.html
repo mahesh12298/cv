@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+<style>
+  img{
+   background-color: orange;
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin: 169px 0 0 637px;
+}
+.myClass{
+   position: absolute;
+   background-color: red !important;
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   margin : 169px 0 0 637px
+}
+.new{
+  color :cyan;
+  margin :70px 0 0 0;
+}
+
+  </style>
+<body>
+<!-- <div class="myClass"></div>
+<div class="animation"></div> -->
+
+<div >
+<img src="https://www.w3schools.com/css/paris.jpg" class="myClass">
+<img src="https://www.w3schools.com/css/rock600x400.jpg" class="animation">
+</div>
+  <marquee class="new">ermaheshsingh12298@gmail.com</marquee>
+
+
+
+
+</body>
+<script>
+  loop();
+ var duration1 = 1500;
+ var duration2 = 1500;
+ 
+ function loop(){
+  $('.animation').fadeIn(duration1, function() {
+        $('.animation').fadeOut(duration2, loop);       
+    })
+ }
+  
+</script>
+</html>
